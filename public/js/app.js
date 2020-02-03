@@ -1,5 +1,38 @@
 // Start with Service Worker
-navigator.serviceWorker.register('/sw.js');
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('/sw.js')
+    .then(function() {
+      console.log('Service worker registered!');
+    });
+}
+
+// Install app on home screen 
+window.addEventListener('beforeinstallprompt', function(event) {
+  console.log('beforeinstallprompt fired');
+  event.preventDefault();
+  defferedPrompt = event;
+  return false;
+});
+
+const shareBtn = document.getElementById('share-btn');
+
+shareBtn.addEventListener('click', function() {
+  if (defferedPrompt) {
+    defferedPrompt.prompt();
+    defferedPrompt.userChoice.then(function(result) {
+      console.log(result.outcome);
+
+      if (result.outcome === 'dismissed') {
+        console.log('User cancelled instalation');
+      } else {
+        console.log('User added to home screen');
+      }
+    });
+
+    defferedPrompt = null;
+  }
+});
 
 
 // Get the current year of the copyright
