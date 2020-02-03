@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Mobile web development with JavaScript, Angular 8+, Ionic 5+, Vue, Bootstrap, Firebase, HTML 5, CSS3, Capacitor, Cordova.js. 3D and 2D design for the most expensive house market. Perfect drawings for CNC water-jet, laser or plasma cutting."/>
+	<meta name="keywords" content="solidworks, slovenia, webpage performance index, architectural metalwork, ornamental metalwork, 3D printer, stair calculator, balustrade and railings calculator, metal gates with vertical bars, glass balustrade calculator, cnc waterjet cutting, igems, web progressive apps, hybrid apps, page validation, javascript, angular, ionic, react js, html 5, css 3"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IT Magic | 3D Design | 2D CAD Drawings | JavaScript | Android Apps | PWA</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="/image/png" href="icons/favicon.png"/>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#3292a6">
+  <meta name="apple-mobile-web-app-title" content="IT Magic">
+  <link rel="apple-touch-icon" href="/icons/apple-icon-57x57.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/icons/apple-icon-60x60.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/icons/apple-icon-72x72.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/icons/apple-icon-76x76.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/icons/apple-icon-114x114.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/icons/apple-icon-120x120.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/icons/apple-icon-144x144.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/icons/apple-icon-152x152.png" sizes="152x152">
+  <link rel="apple-touch-icon" href="/icons/apple-icon-180x180.png" sizes="180x180">
+  <meta name="msapplication-TileImage" content="/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#fff">
+  <meta name="theme-color" content="#3292a6">
+  <!-- production version, optimized for size and speed -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body id="home" data-spy="scroll" data-target="#main-nav">
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-md navbar-light fixed-top py-4" id="main-nav">
+    <div class="container">
+      <a href="#home" class="navbar-brand">
+        <img src="icons/icon-384x384.png" width="60" height="60" alt="eve star">
+        <h3 class="d-inline align-middle">IT Magic</h3>
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#calculations" class="nav-link">Calculations</a>
+          </li>
+          <li class="nav-item">
+            <a href="#products" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SHOWCASE -->
+  <section id="showcase" class="py-5">
+    <div class="primary-overlay text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-center">
+            <h1 class="display-2 mt-5 pt-5">
+              Design first, then build....
+            </h1>
+            <p class="lead">Try our calculator BuildPRO for stairs, balustrades, gates, balconies.....</p>
+            <a href="https://play.google.com/store/apps/details?id=info.architecturalmetalwork.buildpro" class="btn btn-outline-light btn-lg text-white">
+              <i class="fa fa-arrow-right"></i> Go To Google Play Store
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <img src="img/buildpro.png" alt="BuildPRO calculations balustrade, stairs, gates, architectural metalwork" class="img-fluid d-none d-lg-block">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="bg-dark text-white py-5" id="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <input type="text" class="form-control form-control-lg mb-resp" placeholder="Enter Name">
+        </div>
+        <div class="col-md-4">
+          <input type="email" class="form-control form-control-lg mb-resp" placeholder="Enter Email">
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-primary btn-lg btn-block">
+            <i class="fa fa-envelope-open-o"></i>Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOXES - CNC Images -->
+  <section id="cnc-images" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="text-center border-primary mb-resp">
+            <img src="img/cnc1.png" alt="laser or water-jet cnc images">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="text-center border-primary mb-resp">
+            <img src="img/cnc2.png" alt="ornamental design">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="text-center border-primary mb-resp">
+            <img src="img/cnc3.png" alt="expensive house market">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="text-center border-primary mb-resp">
+            <img src="img/cnc4.png" alt="metal panel for balcony">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALCULATIONS -->
+  <section id="calculations" class="py-5 text-center bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="info-header mb-5">
+            <h1 class="text-primary pb-3">
+              BuildPRO
+            </h1>
+            <p class="lead pb-3">
+              BuildPRO suits perfectly for our main business design products for the building industry.
+            </p>
+          </div>
+
+          <!-- ACCORDION -->
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="mb-0">
+                  <div href="#appCalcSimplePanel" data-toggle="collapse" data-parent="#accordion">
+                    <i class="fa fa-arrow-circle-down"></i> Simple Panel Calculator
+                  </div>
+                </h5>
+              </div>
+
+              <div id="appCalcSimplePanel" class="collapse show">
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+
+                      <div class="col-lg-4">
+                        <div class="text-center border-primary mb-resp">
+                          <img src="img/panel.png" class="calculations-img" alt="metal panel for balcony">
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4">
+
+                        <h4 class="text-success text-center">Enter Data</h4>
+
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Length</span>
+                          </div>
+                          <input type="number" v-model="length" class="form-control" v-on:input="calculateGap" aria-label="Length" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon2">Bar Diameter</span>
+                          </div>
+                          <input type="number" class="form-control" v-model="barDiameter" v-on:input="calculateGap" aria-label="Bar Diameter" aria-describedby="basic-addon2">
+                        </div>
+
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Bars Number</span>
+                          </div>
+                          <input type="number" class="form-control" v-model="barNumber" aria-label="BarsNumber" v-on:input="calculateGap" aria-describedby="basic-addon3">
+                        </div>
+
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon43">Gap</span>
+                          </div>
+                          <input type="number" class="form-control" v-model="gap" aria-label="Gap" disabled aria-describedby="basic-addon43">
+                        </div>
+
+                      </div>
+
+                      <div class="col-lg-4 text-left">
+                        <h4 class="text-success text-center" v-if="startPoints.length > 0">Start Points</h4>
+                        <ul class="list-group">
+                          <li class="list-group-item" v-bind:class="{ 'text-success': i % 2 === 0 }" v-for="(start, i) in startPoints">S-{{ i }}: {{ start }}</li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h5 class="mb-0">
+                  <div href="#tapperedTreads" data-toggle="collapse" data-parent="#accordion">
+                    <i class="fa fa-arrow-circle-down"></i> Tapered Treads(width < 1000)
+                  </div>
+                </h5>
+              </div>
+
+              <div id="tapperedTreads" class="collapse show">
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+
+                      <div class="col-lg-4">
+                        <div class="text-center border-primary mb-resp">
+                          <img src="img/kite.png" class="calculations-img" alt="Tappered treads width less than 1000 mm">
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4">
+
+                        <h4 class="text-success text-center">Enter Data</h4>
+
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon11">R Out (radius)</span>
+                          </div>
+                          <input type="number" v-model="radiusOUT" class="form-control" v-on:input="calculateData" aria-label="R Out (radius)" aria-describedby="basic-addon11">
+                        </div>
+
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon12">R IN (radius)</span>
+                          </div>
+                          <input type="number" class="form-control" v-model="radiusIN" v-on:input="calculateData" aria-label="R IN (radius)" aria-describedby="basic-addon12">
+                        </div>
+
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon13">Angle</span>
+                          </div>
+                          <input type="number" class="form-control" v-model="angle" aria-label="Angle" v-on:input="calculateData" aria-describedby="basic-addon13">
+                        </div>
+
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon14">Tread Number</span>
+                          </div>
+                          <input type="number" class="form-control" v-model="treadNumber" aria-label="Tread Number" v-on:input="calculateData" aria-describedby="basic-addon14">
+                        </div>
+
+                      </div>
+
+                      <div class="col-lg-4 text-left">
+
+                        <h4 class="text-success text-center">Results</h4>
+      
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon20">L Mid</span>
+                          </div>
+                          <input type="number" class="form-control" v-model="lMid" aria-label="L Mid" disabled aria-describedby="basic-addon20">
+                        </div>
+
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon21">Angle Tread</span>
+                          </div>
+                          <input type="number" class="form-control" v-model="angleTread" aria-label="Angle Tread" disabled aria-describedby="basic-addon21">
+                        </div>
+
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon22">Stair Width</span>
+                          </div>
+                          <input type="number" class="form-control" v-model="stairWidth" aria-label="Stair Width" disabled aria-describedby="basic-addon22">
+                        </div>
+
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon23">D1</span>
+                          </div>
+                          <input type="number" class="form-control" v-model="d1" aria-label="D1" disabled aria-describedby="basic-addon23">
+                        </div>
+
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon23">D2</span>
+                          </div>
+                          <input type="number" class="form-control" v-model="d2" aria-label="D2" disabled aria-describedby="basic-addon23">
+                        </div>
+                        
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- PRODUCTS -->
+  <section id="products" class="my-5 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="info-header mb-5">
+            <h1 class="text-primary pb-3">
+              Our Products
+            </h1>
+            <p class="lead">
+              We use the newest technology for mobile web development, 3D design, and 2D drawings.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/z1.jpg" alt="" class="img-fluid card-img-top">
+              <h4 class="px-2">Webpages, android, and pwa applications</h4>
+              <p class="px-2">We use the latest technology. Bootstrap, javascript, Vue.js, and Firebase for webpages. Angular 8+, Ionic 5+, and Capacitor for hybrid applications (native android and ios).</p>
+              <div class="d-flex justify-content-center">
+                <div class="p-4">
+                  <a href="http://facebook.com">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </div>
+                <div class="p-4">
+                  <a href="http://twitter.com">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </div>
+                <div class="p-4">
+                  <a href="http://instagram.com">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/kmgrantstairs.jpg" alt="" class="img-fluid card-img-top">
+              <h4 class="px-2">3D design for industry and web</h4>
+              <p class="px-2">More than 20 years of experience from various industries for many different countries. To save money, have profits you have to build a product without mistakes.</p>
+              <div class="d-flex justify-content-center">
+                <div class="p-4">
+                  <a href="http://facebook.com">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </div>
+                <div class="p-4">
+                  <a href="http://twitter.com">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </div>
+                <div class="p-4">
+                  <a href="http://instagram.com">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/scrolls.png" alt="perfect scrolls and panels for ornamental gates, balconies, balustrades" class="img-fluid card-img-top">
+              <h4 class="px-2">Drawings for water-jet or laser CNC cutting</h4>
+              <p class="px-2">Majority ornamental products for expensive house market is made on CNC machines. To make perfect drawings where are involved in many spline lines is a special skill. </p>
+              <div class="d-flex justify-content-center">
+                <div class="p-4">
+                  <a href="http://facebook.com">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </div>
+                <div class="p-4">
+                  <a href="http://twitter.com">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </div>
+                <div class="p-4">
+                  <a href="http://instagram.com">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/speedindex.png" alt="perfect scrolls and panels for ornamental gates, balconies, balustrades" class="img-fluid card-img-top">
+              <h4 class="px-2">Webpage validation - Google Lighthouse</h4>
+              <p class="px-2">Buying a new web page is complicated. The modern web is changing at a fast pace. Technology once popular can be outdated in a few months. Better validate before buying. </p>
+              <div class="d-flex justify-content-center">
+                <div class="p-4">
+                  <a href="http://facebook.com">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </div>
+                <div class="p-4">
+                  <a href="http://twitter.com">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </div>
+                <div class="p-4">
+                  <a href="http://instagram.com">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <h3>Get In Touch</h3>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, temporibus!</p>
+          <form>
+            <div class="input-group input-group-lg mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-user"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="Name">
+            </div>
+
+            <div class="input-group input-group-lg mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-envelope"></i>
+                </span>
+              </div>
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+
+            <div class="input-group input-group-lg mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-pencil-alt"></i>
+                </span>
+              </div>
+              <textarea class="form-control" placeholder="Message" rows="5"></textarea>
+            </div>
+
+            <input type="submit" value="Submit" class="btn btn-primary btn-block btn-lg">
+          </form>
+        </div>
+
+        <div class="col-lg-3 align-self-center">
+          <img src="icons/icon-384x384.png" alt="IT Magic" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="main-footer" class="py-5 bg-primary text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-6 ml-auto">
+          <p class="lead">
+            Copyright &copy;
+            <span id="year"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
